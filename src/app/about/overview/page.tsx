@@ -1,5 +1,4 @@
 import Navbar from "@/app/component/Navbar/Navbar";
-import Intro from "@/app/section/Intro/page";
 
 export default function Home() {
   return (
