@@ -3,24 +3,17 @@
 
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Navbar() {
-    const pathname = usePathname();
     const [headerBg, setHeaderBg] = useState(false);
 
     // SET HEADER BACKGROUND COLOR
     useEffect(() => {
-        if (pathname === "/") {
             setHeaderBg(true);
             const header = document.getElementById("header");
             header!.classList.add("bg-linear-to-b", "from-black", "to-black/[0]");
-        } else {
-            const header = document.getElementById("header");
-            header!.classList.add("bg-black");
-        }
-    })
+    }, [])
 
     // HEADER BACKGROUND COLOR TRANSITION ON HOME PAGE
     useEffect(() => {
@@ -155,7 +148,7 @@ export default function Navbar() {
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
                                         <Link className="hover:bg-black hover:text-white" href="/about/overview">Overview</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Leadership</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/leadership">Leadership</Link>
                                         <Link className="hover:bg-black hover:text-white" href="#">Eminent Faculty</Link>
                                         <Link className="hover:bg-black hover:text-white" href="#">Infrastructure</Link>
                                         <Link className="hover:bg-black hover:text-white" href="#">Trust</Link>
