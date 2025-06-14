@@ -9,7 +9,7 @@ import Program from "./section/Program/Program";
 
 export default function Home() {
   return (
-    <div className="h-[500vh]">
+    <div>
       <Navbar/>
       <Intro/>
       <AboutSection/>

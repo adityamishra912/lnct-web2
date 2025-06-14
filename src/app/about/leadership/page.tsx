@@ -1,5 +1,6 @@
 import Navbar from "@/app/component/Navbar/Navbar";
 
+
 export default function leadership() {
     return (
         <div>
@@ -63,7 +64,7 @@ export default function leadership() {
                     </tbody>
                 </table>
 
-                <h1 className="text-2xl font-bold m-4">Principal</h1>
+                <h1 className="text-2xl font-bold m-4">Principal/Director/Dean</h1>
 
                 <table className="border-1 border-solid border-black border-collapse mx-4 w-[80%]">
                     <thead>

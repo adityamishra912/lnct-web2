@@ -3,7 +3,6 @@
 
 import React, { useState } from "react";
 import { useEffect } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
     const [headerBg, setHeaderBg] = useState(false);
@@ -134,7 +133,7 @@ export default function Navbar() {
                     </div>
                     <div className="navBar absolute top-[80px] left-0 text-2xl flex flex-col h-[calc(100vh-80px)] w-[100%] font-bold lg:text-[16px] lg:flex-row lg:justify-end lg:gap-10 lg:mx-10 lg:static lg:ml-0 lg:h-auto lg:w-auto lg:font-normal transition-all duration-300 ease-linear">
                         {/* HOME */}
-                        <div className="m-4 lg:m-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/">Home</Link>
+                        <div className="m-4 lg:m-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><a href="/">Home</a>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* ABOUT */}
@@ -147,17 +146,17 @@ export default function Navbar() {
                                 <div className="h-[100%] lg:bg-white lg:grid lg:grid-cols-2 lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/overview">Overview</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/leadership">Leadership</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Eminent Faculty</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Infrastructure</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Trust</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Credo</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Committee</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">AICTE</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Innovation and Startups</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">International Joural</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#">Greievance Redressal</Link>
+                                        <a className="hover:bg-black hover:text-white" href="/about/overview">Overview</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">Leadership</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Eminent Faculty</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Infrastructure</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Trust</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Credo</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Committee</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">AICTE</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Innovation and Startups</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">International Joural</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Greievance Redressal</a>
                                     </div>
                                     
                                 </div>
@@ -171,10 +170,10 @@ export default function Navbar() {
                             <div className="subMenu w-[100%] absolute text-black top-[80px] left-[100%] lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:translate-x-0">
                                 <div className="translate-x-[100%] lg:grid lg:grid-cols-2 bg-white lg:h-[390px] lg:mt-4 lg:w-auto lg:translate-x-0">
                                     <div className="flex flex-col lg:justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 lg:my-4 lg:h-auto lg:gap-0">
-                                        <Link className="" href="#">Program 1</Link>
-                                        <Link href="#">Program 2</Link>
-                                        <Link href="#">Program 3</Link>
-                                        <Link href="#">Program 4</Link>
+                                        <a className="" href="#">Program 1</a>
+                                        <a href="#">Program 2</a>
+                                        <a href="#">Program 3</a>
+                                        <a href="#">Program 4</a>
                                     </div>
                                     <div className="hidden lg:block bg-black h-full w-100"></div>
                                 </div>
