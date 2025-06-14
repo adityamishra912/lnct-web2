@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="h-[500vh]">
       <Navbar/>
-      <Intro title=""/>
+      <Intro/>
       <AboutSection/>
       <Ranking/>
       <Alumni/>
