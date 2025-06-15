@@ -140,18 +140,16 @@ export default function Navbar() {
                         <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 relative" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} onClick={(e) => mobileNavClick(e)}>About
                             <hr className="uLine w-0 transition-all duration-400" />
 
-                            {/* <div className="subMenu lg:bg-blue-400 lg:w-[600px] lg:h-[300px] lg:hidden lg:absolute lg:top-full"></div> */}
-
                             <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:left-0 lg:top-full lg:translate-x-0 lg:overflow-visible transition-all duration-300 ease-linear">
-                                <div className="h-[100%] lg:bg-white lg:grid lg:grid-cols-2 lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
+                                <div className="h-[100%] lg:bg-white lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
                                         <a className="hover:bg-black hover:text-white" href="/about/overview">Overview</a>
                                         <a className="hover:bg-black hover:text-white" href="/about/leadership">Leadership</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Eminent Faculty</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Infrastructure</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Trust</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Credo</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">Eminent Faculty</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">Infrastructure</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/trust">Trust</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/credo">Credo</a>
                                         <a className="hover:bg-black hover:text-white" href="#">Committee</a>
                                         <a className="hover:bg-black hover:text-white" href="#">AICTE</a>
                                         <a className="hover:bg-black hover:text-white" href="#">Innovation and Startups</a>
@@ -164,18 +162,52 @@ export default function Navbar() {
 
                         </div>
                         {/* PROGRAMS */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Programs
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 relative" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} onClick={(e) => mobileNavClick(e)}>Programs
                             <hr className="uLine w-0 transition-all duration-400" />
 
-                            <div className="subMenu w-[100%] absolute text-black top-[80px] left-[100%] lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:translate-x-0">
-                                <div className="translate-x-[100%] lg:grid lg:grid-cols-2 bg-white lg:h-[390px] lg:mt-4 lg:w-auto lg:translate-x-0">
-                                    <div className="flex flex-col lg:justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 lg:my-4 lg:h-auto lg:gap-0">
-                                        <a className="" href="#">Program 1</a>
-                                        <a href="#">Program 2</a>
-                                        <a href="#">Program 3</a>
-                                        <a href="#">Program 4</a>
+                            <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:left-0 lg:top-full lg:translate-x-0 lg:overflow-visible transition-all duration-300 ease-linear">
+                                <div className="h-[100%] lg:bg-white lg:grid lg:grid-cols-3 lg:h-[500px] lg:mt-2 lg:w-auto lg:translate-x-0">
+                                    <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
+                                        <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
+                                        <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Undergraduate</h1>
+                                        <a className="hover:bg-black hover:text-white" href="/about/overview">B.Tech</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">B.Sc</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">BBA</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">BCA</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/trust">B.Com</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/credo">B.Pharm</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">BPT</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">BA LLB</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">B.Sc</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">MBBS</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">B.H.M</a>
                                     </div>
-                                    <div className="hidden lg:block bg-black h-full w-100"></div>
+
+                                    <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
+                                        <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Postgraduate</h1>
+                                        <a className="hover:bg-black hover:text-white" href="/about/overview">MBA</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">M.Tech</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">MPT</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">M.Pharm</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/trust">M.Sc</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/credo">M.Com</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">MD/MS</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">MMLT</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">LLM</a>
+                                    </div>
+
+                                    <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
+                                        <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Diploma</h1>
+                                        <a className="hover:bg-black hover:text-white" href="/about/overview">D.Pharm</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">Diploma in Agriculture</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">DMLT</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">Diploma in Radiology</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/trust">Diploma in Dialysis Technology</a>
+                                        <a className="hover:bg-black hover:text-white" href="/about/credo">Diploma in Optometry</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Certificate in OT Technician</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Yoga & Naturopathy</a>
+                                    </div>
+                                    
                                 </div>
                             </div>
 
