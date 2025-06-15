@@ -88,17 +88,17 @@ export default function Ranking() {
                             <div className="imagesBox flex" style={{ height: dimensionsGbox.height, width: dimensionsGbox.width }}>
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking1.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation &#40;NBA&#41; for several of its core engineering programs.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking2.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">In NIRF 2024, LNCT was ranked in the 201–300 band nationally for engineering, standing 4ᵗʰ in Madhya Pradesh.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">In NIRF 2024, LNCT was ranked in the 201&#45;300 band nationally for engineering, standing 4ᵗʰ in Madhya Pradesh.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking3.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">In the Outlook 2024 rankings, LNCT Bhopal’s B.Tech program secured the 35ᵗʰ position out of 160 engineering institutes in India. This reflects the institute’s consistent performance in academic excellence and industry relevance. </p></div>
+                                    <div><p className="text-[13px] text-center m-2">In the Outlook 2024 rankings, LNCT Bhopal&#39;s B.Tech program secured the 35ᵗʰ position out of 160 engineering institutes in India. This reflects the institute&#39;s consistent performance in academic excellence and industry relevance. </p></div>
                                 </div>
                             </div>
 
@@ -127,12 +127,12 @@ export default function Ranking() {
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking8.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">The AdscientificIndex highlighted LNCT’s academic impact through strong research metrics, including H-index and citations, placing it competitively within India and Asia.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">The AdscientificIndex highlighted LNCT&#39;s academic impact through strong research metrics, including H-index and citations, placing it competitively within India and Asia.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking9.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">The Week ranked LNCT’s B.Tech program 15ᵗʰ out of 245 in India for 2024, again placing it first in Madhya Pradesh.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">The Week ranked LNCT&#39;s B.Tech program 15ᵗʰ out of 245 in India for 2024, again placing it first in Madhya Pradesh.</p></div>
                                 </div>
                             </div>
 
