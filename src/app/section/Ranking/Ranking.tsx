@@ -105,34 +105,34 @@ export default function Ranking() {
                             <div className="imagesBox flex" style={{ height: dimensionsGbox.height, width: dimensionsGbox.width }}>
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking4.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal was ranked 75ᵗʰ out of 284 for B.Tech by India Today in 2024 and 47ᵗʰ out of 246 in 2023, with an overall college rank of 77ᵗʰ out of 281 in 2023, making it the top-ranked institute in Madhya Pradesh.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking5.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">The IIRF 2024 ranked LNCT B.Tech 34ᵗʰ out of 173, while its university ranking in 2023 placed it 30ᵗʰ in India and 1ˢᵗ in Madhya Pradesh.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking6.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">EduRank 2025 placed LNCT #759 in India, #11,451 globally, and #14 in Bhopal.</p></div>
                                 </div>
                             </div>
 
                             <div className="imagesBox flex" style={{ height: dimensionsGbox.height, width: dimensionsGbox.width }}>
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking7.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">According to uniRank, LNCT ranks #540 in India and #9,813 worldwide based on web presence and popularity.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking8.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">The AdscientificIndex highlighted LNCT’s academic impact through strong research metrics, including H-index and citations, placing it competitively within India and Asia.</p></div>
                                 </div>
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking9.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">LNCT Bhopal is accredited by the National Board of Accreditation (NBA) for several of its core engineering programs.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">The Week ranked LNCT’s B.Tech program 15ᵗʰ out of 245 in India for 2024, again placing it first in Madhya Pradesh.</p></div>
                                 </div>
                             </div>
 
