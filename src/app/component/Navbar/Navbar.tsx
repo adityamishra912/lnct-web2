@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
     const [headerBg, setHeaderBg] = useState(false);
@@ -133,7 +134,7 @@ export default function Navbar() {
                     </div>
                     <div className="navBar absolute top-[80px] left-0 text-2xl flex flex-col h-[calc(100vh-80px)] w-[100%] font-bold lg:text-[16px] lg:flex-row lg:justify-end lg:gap-10 lg:mx-10 lg:static lg:ml-0 lg:h-auto lg:w-auto lg:font-normal transition-all duration-300 ease-linear">
                         {/* HOME */}
-                        <div className="m-4 lg:m-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><a href="/">Home</a>
+                        <div className="m-4 lg:m-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/">Home</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* ABOUT */}
@@ -144,17 +145,17 @@ export default function Navbar() {
                                 <div className="h-[100%] lg:bg-white lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
-                                        <a className="hover:bg-black hover:text-white" href="/about/overview">Overview</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">Leadership</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">Eminent Faculty</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">Infrastructure</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/trust">Trust</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/credo">Credo</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Committee</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">AICTE</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Innovation and Startups</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">International Joural</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Greievance Redressal</a>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/overview">Overview</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/leadership">Leadership</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/eminent-faculty">Eminent Faculty</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/infrastructure">Infrastructure</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/trust">Trust</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/credo">Credo</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Committee</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">AICTE</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Innovation and Startups</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">International Joural</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Greievance Redressal</Link>
                                     </div>
                                     
                                 </div>
@@ -170,42 +171,42 @@ export default function Navbar() {
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
                                         <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Undergraduate</h1>
-                                        <a className="hover:bg-black hover:text-white" href="#">B.Tech</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">B.Sc</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">BBA</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">BCA</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">B.Com</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">B.Pharm</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">BPT</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">BA LLB</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">B.Sc</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">MBBS</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">B.H.M</a>
+                                        <Link className="hover:bg-black hover:text-white" href="#">B.Tech</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">B.Sc</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">BBA</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">BCA</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">B.Com</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">B.Pharm</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">BPT</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">BA LLB</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">B.Sc</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">MBBS</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">B.H.M</Link>
                                     </div>
 
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
                                         <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Postgraduate</h1>
-                                        <a className="hover:bg-black hover:text-white" href="#">MBA</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">M.Tech</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">MPT</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">M.Pharm</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">M.Sc</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">M.Com</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">MD/MS</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">MMLT</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">LLM</a>
+                                        <Link className="hover:bg-black hover:text-white" href="#">MBA</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">M.Tech</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">MPT</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">M.Pharm</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">M.Sc</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">M.Com</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">MD/MS</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">MMLT</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">LLM</Link>
                                     </div>
 
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
                                         <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Diploma</h1>
-                                        <a className="hover:bg-black hover:text-white" href="#">D.Pharm</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Agriculture</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">DMLT</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Radiology</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Dialysis Technology</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Optometry</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Certificate in OT Technician</a>
-                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Yoga & Naturopathy</a>
+                                        <Link className="hover:bg-black hover:text-white" href="#">D.Pharm</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Diploma in Agriculture</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">DMLT</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Diploma in Radiology</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Diploma in Dialysis Technology</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Diploma in Optometry</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Certificate in OT Technician</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#">Diploma in Yoga & Naturopathy</Link>
                                     </div>
                                     
                                 </div>
