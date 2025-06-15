@@ -1,7 +1,6 @@
 import Navbar from "@/app/component/Navbar/Navbar";
 
-
-export default function leadership() {
+export default function Leadership() {
     return (
         <div>
             <Navbar />
@@ -13,112 +12,85 @@ export default function leadership() {
                 />
             </section>
 
-            <section className="flex flex-col items-center mb-4">
+            <section className="flex flex-col items-center mb-4 font-sans">
+
+                {/* Chancellor */}
                 <h1 className="text-2xl font-bold m-4">Chancellor</h1>
-
-                <table className="border-1 border-solid border-black border-collapse mx-4 w-[80%]">
-                    <thead>
-                        <tr className="h-12">
-                            <th className="border-1 border-solid border-black">Designation</th>
-                            <th className="border-1 border-solid border-black">Name</th>
+                <table className="w-[80%] mx-auto table-fixed border-black border rounded-md overflow-hidden">
+                    <thead className="bg-gray-100">
+                        <tr>
+                            <th className="border border-black px-4 py-2 w-1/2 text-left">Designation</th>
+                            <th className="border border-black px-4 py-2 w-1/2 text-left">Name</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Chancellor &#40;LNCT University&#41;</td>
-                            <td className="border-1 border-solid border-black">Shri Jay Narayan Chouksey</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Chancellor (LNCT University)</td>
+                            <td className="border border-black px-4 py-2">Shri Jay Narayan Chouksey</td>
                         </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Chancellor &#40;LNCT Vidyapeeth University&#41;</td>
-                            <td className="border-1 border-solid border-black">Smt. Poonam Chouksey</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Chancellor (LNCT Vidyapeeth University)</td>
+                            <td className="border border-black px-4 py-2">Smt. Poonam Chouksey</td>
                         </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Chancellor &#40;JNCT Professional University&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr Anupam Chouksey</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Chancellor (JNCT Professional University)</td>
+                            <td className="border border-black px-4 py-2">Dr Anupam Chouksey</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h1 className="text-2xl font-bold m-4">Ofiicer on Special Duty &#40;OSD&#41;</h1>
-
-                <table className="border-1 border-solid border-black border-collapse mx-4 w-[80%]">
-                    <thead>
-                        <tr className="h-12">
-                            <th className="border-1 border-solid border-black">Designation</th>
-                            <th className="border-1 border-solid border-black">Name</th>
+                {/* OSD */}
+                <h1 className="text-2xl font-bold m-4">Officer on Special Duty (OSD)</h1>
+                <table className="w-[80%] mx-auto table-fixed border border-black rounded-md overflow-hidden">
+                    <thead className="bg-gray-100">
+                        <tr>
+                            <th className="border border-black px-4 py-2 w-1/2 text-left">Designation</th>
+                            <th className="border border-black px-4 py-2 w-1/2 text-left">Name</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Group OSD</td>
-                            <td className="border-1 border-solid border-black">Dr. SUNIL KUMAR SINGH</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Group OSD</td>
+                            <td className="border border-black px-4 py-2">Dr. SUNIL KUMAR SINGH</td>
                         </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">OSD &#40;LNCTS&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. AMITBODH UPADHYAYA</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">OSD (LNCTS)</td>
+                            <td className="border border-black px-4 py-2">Dr. AMITBODH UPADHYAYA</td>
                         </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">OSD &#40;LNCTE&#41;</td>
-                            <td className="border-1 border-solid border-black">Ms. Usha Singh</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">OSD (LNCTE)</td>
+                            <td className="border border-black px-4 py-2">Ms. Usha Singh</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h1 className="text-2xl font-bold m-4">Principal/Director/Dean</h1>
 
-                <table className="border-1 border-solid border-black border-collapse mx-4 w-[80%]">
-                    <thead>
-                        <tr className="h-12">
-                            <th className="border-1 border-solid border-black">Designation</th>
-                            <th className="border-1 border-solid border-black">Name</th>
+                {/* Principal */}
+                <h1 className="text-2xl font-bold m-4">Principal</h1>
+                <table className="w-[80%] mx-auto table-fixed border border-black rounded-md overflow-hidden">
+                    <thead className="bg-gray-100">
+                        <tr>
+                            <th className="border border-black px-4 py-2 w-1/2 text-left">Designation</th>
+                            <th className="border border-black px-4 py-2 w-1/2 text-left">Name</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Principal &#40;LNCT&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. VINAY KUMAR SAHU</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Principal (LNCTS)</td>
+                            <td className="border border-black px-4 py-2">Dr. SUNIL KUMAR SINGH</td>
                         </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Principal &#40;LNCTS&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. VISHVENDRA NATH BARTARIA</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Principal (LNCTS)</td>
+                            <td className="border border-black px-4 py-2">Dr. AMITBODH UPADHYAYA</td>
                         </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Principal &#40;LNCTE&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. ANIL K. SAXENA</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Principal &#40;LNCP&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. Mehta Parulben D.</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Director Administration</td>
-                            <td className="border-1 border-solid border-black">Dr. ASHOK KUMAR RAI</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Group Director &#40;T&P&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. ANUJ GARG</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Group Director &#40;R&D&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. ABHINEET A GOYAL</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Director &#40;MBA&#41;</td>
-                            <td className="border-1 border-solid border-black">Prof. &#40;Dr.&#41; ARVIND SINGH</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Director &#40;MCA&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. SANJAY BAJPAI</td>
-                        </tr>
-                        <tr className="h-10">
-                            <td className="border-1 border-solid border-black">Dean &#40;Student Welfare&#41;</td>
-                            <td className="border-1 border-solid border-black">Dr. AMIT SHRIVASTAVA</td>
+                        <tr className="hover:bg-blue-100 transition duration-300">
+                            <td className="border border-black px-4 py-2">Principal (LNCTE)</td>
+                            <td className="border border-black px-4 py-2">Ms. Usha Singh</td>
                         </tr>
                     </tbody>
                 </table>
 
             </section>
-
         </div>
-    )
+    );
 }

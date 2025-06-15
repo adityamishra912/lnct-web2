@@ -104,16 +104,59 @@ export default function Navbar() {
         }
     }
 
+    // SISTER CONCERN HOVER
+
+    function concernHover(e: React.MouseEvent<HTMLAnchorElement>) {
+        console.log("CONCERN HOVER");
+        const target = e.currentTarget;
+        console.log(target.id);
+        const bg = document.querySelector(`.concern.${target.id}`);
+        target.classList.add("underline");
+        document.querySelectorAll(".concern").forEach(a => {
+            (a as HTMLElement).style.display = "none";
+        })
+        if (bg) {
+            (bg as HTMLElement).style.display = "block";
+        }
+    }
+
+    function concernUnhover(e: React.MouseEvent<HTMLAnchorElement>) {
+        console.log("CONCERN UNHOVER");
+        const target = e.currentTarget;
+        target.classList.remove("underline");
+    }
+
+    // SISTER CONCERN HOVER
+
+    function campusHover(e: React.MouseEvent<HTMLAnchorElement>) {
+        console.log("CONCERN HOVER");
+        const target = e.currentTarget;
+        console.log(target.id);
+        const bg = document.querySelector(`.campus.${target.id}`);
+        target.classList.add("underline");
+        document.querySelectorAll(".campus").forEach(a => {
+            (a as HTMLElement).style.display = "none";
+        })
+        if (bg) {
+            (bg as HTMLElement).style.display = "block";
+        }
+    }
+
+    function campusUnhover(e: React.MouseEvent<HTMLAnchorElement>) {
+        console.log("CONCERN UNHOVER");
+        const target = e.currentTarget;
+        target.classList.remove("underline");
+    }
+
 
     return (
         <header id="header" className="fixed top-0 h-[140px] w-[100%] font-body transition-colors duration-500 ease-in-out z-[9999]">
             <nav className="fixed w-full">
                 <div className="flex justify-between items-center mt-6 mx-6">
-                    <div className="ml-4"><img src="/media/logo2.png" className="h-[50px]" /></div>
+                    <div className="ml-4"><img src="/media/logo3.png" className="h-[50px]" /></div>
                     <div className="mr-4">
                         <ul className="hidden lg:flex lg:gap-2 lg:text-white">
-                            <li className="bg-orange-400 px-4 py-2">Notification</li>
-                            <li className="bg-orange-400 px-4 py-2">Admission</li>
+                            <li className="bg-orange-400 px-4 py-2"><Link href="/#contact">Admission</Link></li>
                             <li className="bg-orange-400 px-4 py-2">Login</li>
                         </ul>
                     </div>
@@ -149,11 +192,10 @@ export default function Navbar() {
                                         <Link className="hover:bg-black hover:text-white" href="/about/infrastructure" scroll={true}>Infrastructure</Link>
                                         <Link className="hover:bg-black hover:text-white" href="/about/trust" scroll={true}>Trust</Link>
                                         <Link className="hover:bg-black hover:text-white" href="/about/credo" scroll={true}>Credo</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Committee</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>AICTE</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Innovation and Startups</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>International Joural</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Greievance Redressal</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/committee" scroll={true}>Committee</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/Innovation" scroll={true}>Innovation and Startups</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/IJNCT" scroll={true}>International Joural</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/Grievance" scroll={true}>Greievance Redressal</Link>
                                     </div>
                                     
                                 </div>
@@ -212,36 +254,76 @@ export default function Navbar() {
 
                         </div>
                         {/* PLACEMENT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Training & Placements
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/pages/training-and-placement">Training & Placements</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* RANKING */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Ranking
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/pages/ranking">Ranking</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
-                        {/* ALUMNI */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Alumni
+                        {/* Campuses */}
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 relative" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} onClick={(e) => mobileNavClick(e)}>Campuses
                             <hr className="uLine w-0 transition-all duration-400" />
+
+                            <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:right-0 lg:top-full lg:-translate-x-[100%] lg:overflow-visible transition-all duration-300 ease-linear">
+                                <div className="h-[100%] lg:grid lg:grid-cols-2 lg:bg-white lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
+                                    <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
+                                        <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onMouseOver={(e) => mobileNavClose(e)}>&#60; BACK</div>
+                                        <a id="campus6" href="https://lncpbhopal.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>LNCT BHOPAL</a>
+                                        <a id="campus1" href="https://lncts.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>LNCTS BHOPAL</a>
+                                        <a id="campus2" href="https://lncte.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>LNCTE BHOPAL</a>
+                                        <a id="campus3" href="https://lnctvu.ac.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>LNCT Vidhyapeeth University Indore</a>
+                                        <a id="campus4" href="https://www.jnctpu.edu.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>JNCT Professional University Bhopal</a>
+                                        <a id="campus5" href="https://lncpbhopal.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>LNCP BHOPAL</a>
+                                        <a id="campus7" href="https://lnctmca.in/" onMouseOver={e => campusHover(e)} onMouseOut={e => campusUnhover(e)}>LNCT MCA BHOPAL</a>
+                                    </div>
+
+                                    <div className="hidden lg:block h-full w-[300px] relative">
+                                        <div className="campus campus7 h-full w-full absolute top-0 left-0"><img src="/concern/camp7.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus5 h-full w-full absolute top-0 left-0"><img src="/concern/camp5.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus4 h-full w-full absolute top-0 left-0"><img src="/concern/camp4.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus3 h-full w-full absolute top-0 left-0"><img src="/concern/camp3.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus2 h-full w-full absolute top-0 left-0"><img src="/concern/camp2.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus1 h-full w-full absolute top-0 left-0"><img src="/concern/camp1.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus6 h-full w-full absolute top-0 left-0"><img src="/concern/camp6.jpg" className="h-full w-full object-cover"/></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
                         </div>
                         {/* Sister Concerns */}
                         <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 relative" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} onClick={(e) => mobileNavClick(e)}>Sister Concerns
                             <hr className="uLine w-0 transition-all duration-400" />
 
-                            <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:left-0 lg:top-full lg:translate-x-0 lg:overflow-visible transition-all duration-300 ease-linear">
-                                <div className="h-[100%] lg:bg-white lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
+                            <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:right-0 lg:top-full lg:-translate-x-[100%] lg:overflow-visible transition-all duration-300 ease-linear">
+                                <div className="h-[100%] lg:grid lg:grid-cols-2 lg:bg-white lg:h-[500px] lg:mt-2 lg:w-auto lg:translate-x-0">
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
-                                        <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/overview" scroll={true}>Overview</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/leadership" scroll={true}>Leadership</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/eminent-faculty" scroll={true}>Eminent Faculty</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/infrastructure" scroll={true}>Infrastructure</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/trust" scroll={true}>Trust</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="/about/credo" scroll={true}>Credo</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Committee</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>AICTE</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Innovation and Startups</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>International Joural</Link>
-                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Greievance Redressal</Link>
+                                        <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onMouseOver={(e) => mobileNavClose(e)}>&#60; BACK</div>
+                                        <a id="concern1" href="https://www.lnctworldschools.com/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>LNCT World School</a>
+                                        <a id="concern2" href="https://www.ananjay.co.in/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Ananjay Softek Solutions</a>
+                                        <a id="concern5" href="https://ananjaypharma.co.in/#" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Ananjay Pharmaceuticals Pvt. Lmt.</a>
+                                        <a id="concern3" href="https://www.ananjay.co.in/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Kalruchi Contractors</a>
+                                        <a id="concern4" href="https://parvatisweetners.co.in/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Parvati Sweetners</a>
+                                        <a id="concern6" href="https://vitamax.co.in/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Vitamax Healthcare Pvt. Lmt.</a>
+                                        <a id="concern7" href="https://dabraalcobrew.com/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Dabra Alcobrew Pvt. Lmt.</a>
+                                        <a id="concern8" href="https://lnctguru.com/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>LNCT Guru</a>
+                                        <a id="concern9" href="https://indorelnmc.com/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>LNCT Medical College & Sewakunj Hospital Indore</a>
+                                        <a id="concern10" href="https://cecbilaspur.ac.in/" onMouseOver={e => concernHover(e)} onMouseOut={e => concernUnhover(e)}>Chouksey Group of Colleges</a>
+                                    </div>
+
+                                    <div className="hidden lg:block h-full w-[300px] relative">
+                                        
+                                        <div className="concern concern10 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern10.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern9 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern9.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern8 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern8.png" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern7 h-full w-full absolute top-0 left-0"><img src="/concern/concern7.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern6 h-full w-full absolute top-0 left-0"><img src="/concern/concern6.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern5 h-full w-full absolute top-0 left-0"><img src="/concern/concern5.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern2 h-full w-full bg-white absolute top-0 left-0" style={{display: 'hidden'}}><img src="/concern/concern2.jpg" className="w-full absolute top-[50%] -translate-y-[50%]"/></div>
+                                        <div className="concern concern3 h-full w-full absolute top-0 left-0" style={{display: 'hidden'}}><img src="/concern/concern3.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern4 h-full w-full absolute top-0 left-0" style={{display: 'hidden'}}><img src="/concern/concern4.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="concern concern1 h-full w-full absolute top-0 left-0"><img src="/concern/concern1.jpg" className="h-full w-full object-cover"/></div>
                                     </div>
                                     
                                 </div>
@@ -249,11 +331,25 @@ export default function Navbar() {
 
                         </div>
                         {/* MORE SECRTION */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Explore More
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 relative" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Explore More
                             <hr className="uLine w-0 transition-all duration-400" />
+
+                            <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[100px] lg:h-[80px] lg:absolute lg:right-0 lg:top-full lg:-translate-x-[100%] lg:overflow-visible transition-all duration-300 ease-linear">
+                                <div className="h-[100%] lg:bg-white lg:h-[120px] lg:mt-2 lg:w-auto lg:translate-x-0">
+                                    <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
+                                        <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onMouseOver={(e) => mobileNavClose(e)}>&#60; BACK</div>
+                                        <Link className="hover:bg-black hover:text-white" href="/pages/alumni" scroll={true}>Alumni</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/pages/hostels" scroll={true}>Hostels</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/pages/ranking" scroll={true}>Ranking</Link>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+
                         </div>
                         {/* CONTACT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Contact Us
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/#contact">Contact Us</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                     </div>
