@@ -66,7 +66,6 @@ export default function Navbar() {
         const menuBar = document.querySelector(".menuBar");
         menuBar!.classList.remove("-translate-x-[100%]");
         menuBar!.classList.add("translate-x-0");
-        document.body.style.overflow = "hidden";
     }
 
     function closeMobileMenu() {
@@ -74,7 +73,6 @@ export default function Navbar() {
         const menuBar = document.querySelector(".menuBar");
         menuBar!.classList.remove("translate-x-0");
         menuBar!.classList.add("-translate-x-[100%]");
-        document.body.style.overflow = "";
     }
 
     // MOBILE SUBMENU ANIMATION
@@ -213,10 +211,6 @@ export default function Navbar() {
                             </div>
 
                         </div>
-                        {/* DEPARTMENT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Department
-                            <hr className="uLine w-0 transition-all duration-400" />
-                        </div>
                         {/* PLACEMENT */}
                         <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Training & Placements
                             <hr className="uLine w-0 transition-all duration-400" />
@@ -228,6 +222,31 @@ export default function Navbar() {
                         {/* ALUMNI */}
                         <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Alumni
                             <hr className="uLine w-0 transition-all duration-400" />
+                        </div>
+                        {/* Sister Concerns */}
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 relative" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} onClick={(e) => mobileNavClick(e)}>Sister Concerns
+                            <hr className="uLine w-0 transition-all duration-400" />
+
+                            <div className="subMenu z-50 overflow-y-scroll h-[calc(100vh-80px)] w-[100%] fixed top-[80px] left-[100%] text-white lg:hidden lg:text-black lg:w-[600px] lg:h-[300px] lg:absolute lg:left-0 lg:top-full lg:translate-x-0 lg:overflow-visible transition-all duration-300 ease-linear">
+                                <div className="h-[100%] lg:bg-white lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
+                                    <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
+                                        <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/overview" scroll={true}>Overview</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/leadership" scroll={true}>Leadership</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/eminent-faculty" scroll={true}>Eminent Faculty</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/infrastructure" scroll={true}>Infrastructure</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/trust" scroll={true}>Trust</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="/about/credo" scroll={true}>Credo</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Committee</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>AICTE</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Innovation and Startups</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>International Joural</Link>
+                                        <Link className="hover:bg-black hover:text-white" href="#" scroll={true}>Greievance Redressal</Link>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
                         </div>
                         {/* MORE SECRTION */}
                         <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Explore More
