@@ -14,6 +14,8 @@ export default function hostels() {
 
             <h1 className="text-6xl m-4 underline underline-offset-6 decoration-3 text-center">Alumni</h1>
 
+            <section className="grid grid-cols-1 grid-rows-7">
+
             <article>
                 <div className="bg-black lg:h-[280px] w-[80vw] overflow-visible relative py-4 rounded-[16px_0_0_16px] float-right my-6">
                     <div className="my-6">
@@ -90,6 +92,8 @@ export default function hostels() {
                     <div className="mx-6 my-6 lg:my-0 lg:w-[calc(100%-180px)] float-right"><p className="text-white">Anis Rehman, a 2001 Electronics & Communication graduate from LNCT, serves as Director in the Ministry of Communication, Government of India, exemplifying leadership in digital transformation and public service.</p></div>
                 </div>
             </article>
+
+            </section>
 
         </div>
     )
