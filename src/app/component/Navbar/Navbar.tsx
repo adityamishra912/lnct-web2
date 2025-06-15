@@ -170,12 +170,12 @@ export default function Navbar() {
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
                                         <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Undergraduate</h1>
-                                        <a className="hover:bg-black hover:text-white" href="/about/overview">B.Tech</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">B.Sc</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">BBA</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">BCA</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/trust">B.Com</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/credo">B.Pharm</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">B.Tech</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">B.Sc</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">BBA</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">BCA</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">B.Com</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">B.Pharm</a>
                                         <a className="hover:bg-black hover:text-white" href="#">BPT</a>
                                         <a className="hover:bg-black hover:text-white" href="#">BA LLB</a>
                                         <a className="hover:bg-black hover:text-white" href="#">B.Sc</a>
@@ -185,12 +185,12 @@ export default function Navbar() {
 
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
                                         <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Postgraduate</h1>
-                                        <a className="hover:bg-black hover:text-white" href="/about/overview">MBA</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">M.Tech</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">MPT</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">M.Pharm</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/trust">M.Sc</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/credo">M.Com</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">MBA</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">M.Tech</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">MPT</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">M.Pharm</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">M.Sc</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">M.Com</a>
                                         <a className="hover:bg-black hover:text-white" href="#">MD/MS</a>
                                         <a className="hover:bg-black hover:text-white" href="#">MMLT</a>
                                         <a className="hover:bg-black hover:text-white" href="#">LLM</a>
@@ -198,12 +198,12 @@ export default function Navbar() {
 
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal lg:w-[160px]">
                                         <h1 className="font-extrabold text-2xl lg:font-bold lg:text-[16px]">Diploma</h1>
-                                        <a className="hover:bg-black hover:text-white" href="/about/overview">D.Pharm</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/leadership">Diploma in Agriculture</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/eminent-faculty">DMLT</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/infrastructure">Diploma in Radiology</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/trust">Diploma in Dialysis Technology</a>
-                                        <a className="hover:bg-black hover:text-white" href="/about/credo">Diploma in Optometry</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">D.Pharm</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Agriculture</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">DMLT</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Radiology</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Dialysis Technology</a>
+                                        <a className="hover:bg-black hover:text-white" href="#">Diploma in Optometry</a>
                                         <a className="hover:bg-black hover:text-white" href="#">Certificate in OT Technician</a>
                                         <a className="hover:bg-black hover:text-white" href="#">Diploma in Yoga & Naturopathy</a>
                                     </div>

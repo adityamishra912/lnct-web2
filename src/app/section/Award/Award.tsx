@@ -82,13 +82,13 @@ export default function Award() {
                     <h1 className="text-white text-4xl font-extrabold">Awards & Achievements</h1>
                     <div className="bg-white w-[80%] lg:w-[80%] h-[300px] my-4 rounded-2xl flex justify-center items-center">
                         <div><p onClick={() => { setIndex2(index2 - 1 + (window.innerWidth >= 1024 ? document.querySelectorAll(".imagesBox2").length : document.querySelectorAll(".imageElement2").length)) }} className="bg-black text-3xl text-white h-[40px] w-[40px] flex justify-center items-center rounded-xl shadow-[0_0_1px_1px_white] -translate-x-5">&#60;</p></div>
-                        <div ref={galleryRef2} className="galleryBox w-[240px] h-[248px] lg:w-[80%] overflow-hidden">
+                        <div ref={galleryRef2} className="galleryBox w-[240px] h-[190px] lg:w-[80%] overflow-hidden">
 
                             <div className="imagesBox2Container flex transition-transform duration-300" style={{ height: dimensionsGbox2.height, width: (3 * dimensionsGbox2.width) }}>
 
                                 <div className="imagesBox2 flex" style={{ height: dimensionsGbox2.height, width: dimensionsGbox2.width }}>
                                     <div className="imageElement2 h-[240px] flex-1 m-1">
-                                        <div className="w-full flex justify-center items-center"><img src="/ranking/award1.jpg" className="w-[100%] h-[100%]" /></div>
+                                        <div className="w-full flex justify-center items-center"><img src="/ranking/award1.jpg" className="w-[100%] h-[100%] self-center" /></div>
                                     </div>
 
                                     <div className="imageElement2 h-[240px] flex-1 m-1">
