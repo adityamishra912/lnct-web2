@@ -98,7 +98,7 @@ export default function Ranking() {
 
                                 <div className="imageElement h-[240px] flex-1 shadow-[0_0_1px_1px_black] m-1">
                                     <div className="h-[50%] w-full flex justify-center items-center"><img src="/ranking/ranking3.png" className="h-full" /></div>
-                                    <div><p className="text-[13px] text-center m-2">In the Outlook 2024 rankings, LNCT Bhopal’s B.Tech program secured the 35ᵗʰ position out of 160 engineering institutes in India. This reflects the institute’s consistent performance in academic excellence and industry relevance.</p></div>
+                                    <div><p className="text-[13px] text-center m-2">In the Outlook 2024 rankings, LNCT Bhopal’s B.Tech program secured the 35ᵗʰ position out of 160 engineering institutes in India. This reflects the institute’s consistent performance in academic excellence and industry relevance. </p></div>
                                 </div>
                             </div>
 
