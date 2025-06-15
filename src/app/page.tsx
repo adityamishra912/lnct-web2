@@ -9,6 +9,7 @@ import Program from "./section/Program/Program";
 import Award from "./section/Award/Award";
 
 export default function Home() {
+
   return (
     <div>
       <Navbar />
