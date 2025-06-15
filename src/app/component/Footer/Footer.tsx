@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <div className="bg-black">
-            <div className="mx-6 py-6 flex gap-6">
+            <div className="mx-6 py-6 flex gap-6 flex-wrap">
 
                 <div className="flex flex-col">
                     <img src="/media/logo4.png" className="w-[150px]"/>
