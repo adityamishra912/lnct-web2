@@ -1,10 +1,7 @@
-import Navbar from "@/app/component/Navbar/Navbar";
-
 export default function Training() {
 
     return (
         <div>
-            <Navbar />
             <section className="h-screen w-full overflow-hidden ">
                 <img
                     className="object-fit h-full w-full inset-0"

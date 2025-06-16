@@ -10,9 +10,9 @@ export default function Navbar() {
 
     // SET HEADER BACKGROUND COLOR
     useEffect(() => {
-            setHeaderBg(true);
-            const header = document.getElementById("header");
-            header!.classList.add("bg-linear-to-b", "from-black", "to-black/[0]");
+        setHeaderBg(true);
+        const header = document.getElementById("header");
+        header!.classList.add("bg-linear-to-b", "from-black", "to-black/[0]");
     }, [])
 
     // HEADER BACKGROUND COLOR TRANSITION ON HOME PAGE
@@ -150,9 +150,9 @@ export default function Navbar() {
 
 
     return (
-        <header id="header" className="fixed top-0 h-[140px] w-[100%] font-body transition-colors duration-500 ease-in-out z-[9999]">
+        <header id="header" className="upperBar fixed top-0 h-[140px] w-[100%] font-body transition-colors duration-500 ease-in-out">
             <nav className="fixed w-full">
-                <div className="flex justify-between items-center mt-6 mx-6">
+                <div id="upperBar" className="flex justify-between items-center mt-6 mx-6">
                     <div className="ml-4"><img src="/media/logo3.png" className="h-[50px]" /></div>
                     <div className="mr-4">
                         <ul className="hidden lg:flex lg:gap-2 lg:text-white">
@@ -160,13 +160,14 @@ export default function Navbar() {
                             <li className="bg-orange-400 px-4 py-2 cursor-pointer">Login</li>
                         </ul>
                     </div>
-                    <div onClick={() => openMobileMenu()} className="lg:hidden flex flex-col justify-center items-center gap-3 h-[60px] w-[60px] bg-orange-400">
+                    <div onClick={(e) => openMobileMenu()} className="opnMenuBtn lg:hidden flex flex-col justify-center items-center gap-3 h-[60px] w-[60px] bg-orange-400 z-[1]">
                         <hr className="border-2 border-solid border-white w-[80%]" />
                         <hr className="border-2 border-solid border-white w-[80%]" />
                         <hr className="border-2 border-solid border-white w-[80%]" />
                     </div>
                 </div>
-                <div className="menuBar overflow-hidden h-full w-[100%] fixed top-0 -left-0 text-white bg-black -translate-x-[100%] lg:bg-black/[0] lg:static lg:bloc lg:mt-6 lg:h-auto lg:w-auto lg:translate-x-0 transition-transform duration-400 lg:overflow-visible">
+                {/* Menu */}
+                <div className="menuBar overflow-hidden h-full w-[100%] fixed top-0 -left-0 text-white bg-black -translate-x-[100%] lg:bg-black/[0] lg:static lg:bloc lg:mt-6 lg:h-auto lg:w-auto lg:translate-x-0 transition-transform duration-400 lg:overflow-visible z-[999]">
                     <div className="h-[80px] w-[100%] flex justify-end items-center lg:hidden">
                         <div className="relative bg-white h-[60px] w-[60px] mr-3 lg:hidden" onClick={() => closeMobileMenu()}>
                             <hr className="border-2 border-solid border-black w-[80%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45" />
@@ -197,7 +198,7 @@ export default function Navbar() {
                                         <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/IJNCT" scroll={true}>International Joural</Link>
                                         <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/Grievance" scroll={true}>Greievance Redressal</Link>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -248,7 +249,7 @@ export default function Navbar() {
                                         <Link className="hover:bg-black hover:text-white cursor-pointer" href="#" scroll={true}>Certificate in OT Technician</Link>
                                         <Link className="hover:bg-black hover:text-white cursor-pointer" href="#" scroll={true}>Diploma in Yoga & Naturopathy</Link>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -279,15 +280,15 @@ export default function Navbar() {
                                     </div>
 
                                     <div className="hidden lg:block h-full w-[300px] relative">
-                                        <div className="campus campus7 h-full w-full absolute top-0 left-0"><img src="/concern/camp7.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="campus campus5 h-full w-full absolute top-0 left-0"><img src="/concern/camp5.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="campus campus4 h-full w-full absolute top-0 left-0"><img src="/concern/camp4.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="campus campus3 h-full w-full absolute top-0 left-0"><img src="/concern/camp3.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="campus campus2 h-full w-full absolute top-0 left-0"><img src="/concern/camp2.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="campus campus1 h-full w-full absolute top-0 left-0"><img src="/concern/camp1.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="campus campus6 h-full w-full absolute top-0 left-0"><img src="/concern/camp6.jpg" className="h-full w-full object-cover"/></div>
+                                        <div className="campus campus7 h-full w-full absolute top-0 left-0"><img src="/concern/camp7.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="campus campus5 h-full w-full absolute top-0 left-0"><img src="/concern/camp5.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="campus campus4 h-full w-full absolute top-0 left-0"><img src="/concern/camp4.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="campus campus3 h-full w-full absolute top-0 left-0"><img src="/concern/camp3.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="campus campus2 h-full w-full absolute top-0 left-0"><img src="/concern/camp2.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="campus campus1 h-full w-full absolute top-0 left-0"><img src="/concern/camp1.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="campus campus6 h-full w-full absolute top-0 left-0"><img src="/concern/camp6.jpg" className="h-full w-full object-cover" /></div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -313,19 +314,19 @@ export default function Navbar() {
                                     </div>
 
                                     <div className="hidden lg:block h-full w-[300px] relative">
-                                        
-                                        <div className="concern concern10 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern10.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern9 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern9.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern8 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern8.png" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern7 h-full w-full absolute top-0 left-0"><img src="/concern/concern7.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern6 h-full w-full absolute top-0 left-0"><img src="/concern/concern6.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern5 h-full w-full absolute top-0 left-0"><img src="/concern/concern5.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern2 h-full w-full bg-white absolute top-0 left-0" style={{display: 'hidden'}}><img src="/concern/concern2.jpg" className="w-full absolute top-[50%] -translate-y-[50%]"/></div>
-                                        <div className="concern concern3 h-full w-full absolute top-0 left-0" style={{display: 'hidden'}}><img src="/concern/concern3.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern4 h-full w-full absolute top-0 left-0" style={{display: 'hidden'}}><img src="/concern/concern4.jpg" className="h-full w-full object-cover"/></div>
-                                        <div className="concern concern1 h-full w-full absolute top-0 left-0"><img src="/concern/concern1.jpg" className="h-full w-full object-cover"/></div>
+
+                                        <div className="concern concern10 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern10.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern9 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern9.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern8 h-full w-full absolute top-0 left-0 bg-white"><img src="/concern/concern8.png" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern7 h-full w-full absolute top-0 left-0"><img src="/concern/concern7.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern6 h-full w-full absolute top-0 left-0"><img src="/concern/concern6.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern5 h-full w-full absolute top-0 left-0"><img src="/concern/concern5.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern2 h-full w-full bg-white absolute top-0 left-0" style={{ display: 'hidden' }}><img src="/concern/concern2.jpg" className="w-full absolute top-[50%] -translate-y-[50%]" /></div>
+                                        <div className="concern concern3 h-full w-full absolute top-0 left-0" style={{ display: 'hidden' }}><img src="/concern/concern3.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern4 h-full w-full absolute top-0 left-0" style={{ display: 'hidden' }}><img src="/concern/concern4.jpg" className="h-full w-full object-cover" /></div>
+                                        <div className="concern concern1 h-full w-full absolute top-0 left-0"><img src="/concern/concern1.jpg" className="h-full w-full object-cover" /></div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -343,7 +344,7 @@ export default function Navbar() {
                                         <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/ranking" scroll={true}>Ranking</Link>
                                     </div>
 
-                                    
+
                                 </div>
                             </div>
 

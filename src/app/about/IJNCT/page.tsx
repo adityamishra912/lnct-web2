@@ -1,11 +1,8 @@
-import Navbar from "@/app/component/Navbar/Navbar";
-
 export default function IJNCT() {
 
 
     return (
         <div>
-            <Navbar />
             <section className="h-screen w-full overflow-hidden">
                 <img
                     className="object-cover h-full w-full inset-0"

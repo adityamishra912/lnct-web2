@@ -1,4 +1,3 @@
-import Navbar from "./component/Navbar/Navbar";
 import Intro from "./section/Intro/page";
 import AboutSection from "./section/About/About";
 import Alumni from "./section/Alumni/Alumni";
@@ -12,7 +11,6 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
       <Intro />
       <AboutSection />
 

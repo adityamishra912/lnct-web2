@@ -1,16 +1,13 @@
-import Navbar from "@/app/component/Navbar/Navbar"
-
 export default function eminentfaculty() {
     return (
         <div>
-            <Navbar />
-                        <section className="h-screen w-full overflow-hidden">
-                            <img
-                                className="object-cover h-full w-full inset-0"
-                                alt="Banner"
-                                src="/media/bg3.jpg"
-                            />
-                        </section>
+            <section className="h-screen w-full overflow-hidden">
+                <img
+                    className="object-cover h-full w-full inset-0"
+                    alt="Banner"
+                    src="/media/bg3.jpg"
+                />
+            </section>
             <section className="flex flex-col items-center mb-4">
                 <h1 className="text-2xl font-bold m-4">Eminent Faculty</h1>
 

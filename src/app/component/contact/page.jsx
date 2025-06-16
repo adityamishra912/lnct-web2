@@ -1,6 +1,4 @@
 'use client';
-import Navbar from "@/app/component/Navbar/Navbar";
-
 import { useState } from 'react';
 
 export default function ContactForm() {
@@ -52,7 +50,6 @@ export default function ContactForm() {
 
     return (
         <div>
-            <Navbar />
             <div className="mt-40 max-w-7xl mx-auto py-16 px-4 md:px-8">
                 <div className="bg-white text-black rounded-xl p-8 grid md:grid-cols-2 gap-10 shadow-xl border border-gray-200">
 
