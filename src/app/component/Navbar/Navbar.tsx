@@ -150,7 +150,7 @@ export default function Navbar() {
 
 
     return (
-        <header id="header" className="upperBar fixed top-0 h-[140px] w-[100%] font-body transition-colors duration-500 ease-in-out">
+        <header id="header" className="fixed top-0 h-[140px] w-[100%] font-body transition-colors duration-500 ease-in-out z-[9999]">
             <nav className="fixed w-full">
                 <div id="upperBar" className="flex justify-between items-center mt-6 mx-6">
                     <div className="ml-4"><img src="/media/logo3.png" className="h-[50px]" /></div>
@@ -176,7 +176,7 @@ export default function Navbar() {
                     </div>
                     <div className="navBar absolute top-[80px] left-0 text-2xl flex flex-col h-[calc(100vh-80px)] w-[100%] font-bold lg:text-[16px] lg:flex-row lg:justify-end lg:gap-10 lg:mx-10 lg:static lg:ml-0 lg:h-auto lg:w-auto lg:font-normal transition-all duration-300 ease-linear">
                         {/* HOME */}
-                        <div className="m-4 lg:m-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/" scroll={true}>Home</Link>
+                        <div className="m-4 lg:m-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/" scroll={true} onClick={closeMobileMenu}>Home</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* ABOUT */}
@@ -187,16 +187,16 @@ export default function Navbar() {
                                 <div className="h-[100%] lg:bg-white lg:h-[390px] lg:mt-2 lg:w-auto lg:translate-x-0">
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onClick={(e) => mobileNavClose(e)}>&#60; BACK</div>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/overview" scroll={true}>Overview</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/leadership" scroll={true}>Leadership</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/eminent-faculty" scroll={true}>Eminent Faculty</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/infrastructure" scroll={true}>Infrastructure</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/trust" scroll={true}>Trust</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/credo" scroll={true}>Credo</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/committee" scroll={true}>Committee</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/Innovation" scroll={true}>Innovation and Startups</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/IJNCT" scroll={true}>International Joural</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/about/Grievance" scroll={true}>Greievance Redressal</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/overview" scroll={true}>Overview</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/leadership" scroll={true}>Leadership</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/eminent-faculty" scroll={true}>Eminent Faculty</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/infrastructure" scroll={true}>Infrastructure</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/trust" scroll={true}>Trust</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/credo" scroll={true}>Credo</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/committee" scroll={true}>Committee</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/Innovation" scroll={true}>Innovation and Startups</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/IJNCT" scroll={true}>International Joural</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer"  onClick={closeMobileMenu} href="/about/Grievance" scroll={true}>Greievance Redressal</Link>
                                     </div>
 
                                 </div>
@@ -255,11 +255,11 @@ export default function Navbar() {
 
                         </div>
                         {/* PLACEMENT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/pages/training-and-placement">Training & Placements</Link>
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/pages/training-and-placement"  onClick={closeMobileMenu}>Training & Placements</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* RANKING */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/pages/ranking">Ranking</Link>
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/pages/ranking"  onClick={closeMobileMenu}>Ranking</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* Campuses */}
@@ -339,9 +339,9 @@ export default function Navbar() {
                                 <div className="h-[100%] lg:bg-white lg:h-[120px] lg:mt-2 lg:w-auto lg:translate-x-0">
                                     <div className="bg-black lg:bg-white flex flex-col justify-around text-[20px] gap-1 h-[calc(100vh-80px)] mx-4 font-bold lg:my-4 lg:h-auto lg:gap-0 lg:font-normal">
                                         <div className="m-4 ml-8 lg:ml-4 text-[16px] lg:hidden" onMouseOver={(e) => mobileNavClose(e)}>&#60; BACK</div>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/alumni" scroll={true}>Alumni</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/hostels" scroll={true}>Hostels</Link>
-                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/ranking" scroll={true}>Ranking</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/alumni" onClick={closeMobileMenu} scroll={true}>Alumni</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/hostels" onClick={closeMobileMenu} scroll={true}>Hostels</Link>
+                                        <Link className="hover:bg-black hover:text-white cursor-pointer" href="/pages/ranking" onClick={closeMobileMenu} scroll={true}>Ranking</Link>
                                     </div>
 
 
@@ -350,7 +350,7 @@ export default function Navbar() {
 
                         </div>
                         {/* CONTACT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/#contact">Contact Us</Link>
+                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 cursor-pointer" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}><Link href="/#contact" onClick={closeMobileMenu}>Contact Us</Link>
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                     </div>
