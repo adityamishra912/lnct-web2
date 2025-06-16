@@ -160,7 +160,7 @@ export default function Navbar() {
                             <li className="bg-orange-400 px-4 py-2 cursor-pointer">Login</li>
                         </ul>
                     </div>
-                    <div onClick={(e) => openMobileMenu()} className="opnMenuBtn lg:hidden flex flex-col justify-center items-center gap-3 h-[60px] w-[60px] bg-orange-400 z-[1]">
+                    <div onClick={() => openMobileMenu()} className="opnMenuBtn lg:hidden flex flex-col justify-center items-center gap-3 h-[60px] w-[60px] bg-orange-400 z-[1]">
                         <hr className="border-2 border-solid border-white w-[80%]" />
                         <hr className="border-2 border-solid border-white w-[80%]" />
                         <hr className="border-2 border-solid border-white w-[80%]" />
